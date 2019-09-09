@@ -13,7 +13,6 @@ class Filters extends React.Component {
 						</label>
 					</p>
 				</form>
-				<h1>Filters Component</h1>
 			</div>
 		);
 	}
