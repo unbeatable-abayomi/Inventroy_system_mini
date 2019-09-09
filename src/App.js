@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
-import Inventory from './Components/Invetory';
 import ColorBlock from './Components/ColorBlock';
+import Clock from './Components/Clock';
+import Products from './Components/Products';
 
 function App() {
 	return (
 		<div className="App">
-			<Inventory />
+			<Products />
 			<ColorBlock />
+			<Clock />
 		</div>
 	);
 }

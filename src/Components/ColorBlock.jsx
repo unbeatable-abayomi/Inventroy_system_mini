@@ -23,7 +23,7 @@ class ColorBlock extends React.Component {
 	render() {
 		return (
 			<div style={{ width: '200px', height: '400px', backgroundColor: this.state.backgroundColor }}>
-				<ColorChangeButton onClick={this.handleChange} />
+				<ColorChangeButton handleChange={this.handleChange} />
 			</div>
 		);
 	}

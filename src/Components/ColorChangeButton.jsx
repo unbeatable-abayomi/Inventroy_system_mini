@@ -12,7 +12,7 @@ class ColorChangeButton extends React.Component {
 	render() {
 		return (
 			<div>
-				<button onClick={this.handleClick}>Change Color</button>
+				<button onClick={this.props.handleChange}>Change Color</button>
 			</div>
 		);
 	}
