@@ -8,8 +8,9 @@ class Clock extends React.Component {
 	state = {
 		time : new Date().toLocaleString()
 	};
+
 	componentDidMount() {
-		this.intervalID = setInterval(this.updateClock, 1000);
+		this.intervalID = setInterval(() => this.updateClock(), 1000);
 	}
 	componentWillUnmount() {
 		clearInterval(this.intervalID);
@@ -22,7 +23,7 @@ class Clock extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>table componenet</h1>
+				<h1>Clock Component</h1>
 				<h3>The time {this.state.time} </h3>
 			</div>
 		);
